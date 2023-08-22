@@ -7,7 +7,7 @@ FiShare2
 function Track() {
     return(
         <div>
-            <div>
+            {/* <div>
                 <p>1</p>
                 <IoPlayOutline style={{ color: "var(--text)"}} />
             </div>
@@ -18,7 +18,28 @@ function Track() {
             <div>
                 <p>3:35</p>
                 <IoPlayOutline style={{ color: "var(--text)"}} />
-            </div>
+            </div> */}
+//La table será parte de un componente que envolverá los tracks
+            
+                <tr id="track-number">
+                    <td width="30px">1</td>
+                    <td>
+                        <a href="">
+                            <IoPlayOutline />
+                        </a>
+                        <div>
+                            The Small Things
+                            <span>Conro</span>
+                        </div> 
+                   </td>
+                    <td>3:35</td>
+                    <td>
+                        <a href="">
+                            <FiShare2 style={{ color: "var(--text)"}} />
+                        </a>
+                    </td>
+                </tr>
+            
         </div>
     );
 }
