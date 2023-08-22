@@ -3,44 +3,31 @@ import { IoPlayOutline } from "react-icons/io5";
 import { FiShare2 } from "react-icons/fi";
 FiShare2
 
-/* Hacer el track con una TABLE!!*/
-function Track() {
+
+function Track({trackNumber, trackName, trackTime}) {
     return(
-        <div>
-            {/* <div>
-                <p>1</p>
-                <IoPlayOutline style={{ color: "var(--text)"}} />
-            </div>
-            <div>
-                <p class="track-name">The Small Things</p>
-                <p class="track-artist">Conro</p>
-            </div>
-            <div>
-                <p>3:35</p>
-                <IoPlayOutline style={{ color: "var(--text)"}} />
-            </div> */}
-//La table será parte de un componente que envolverá los tracks
+        <tr id="track-number" class="track">
+            <td width="30px" class="track-number text-center">
+                {trackNumber}
+            </td>
+            <td class="d-flex">
+                <a href="" class="d-flex flex-column justify-content-center ">
+                    <IoPlayOutline style={{ color: "var(--text)", height: "26px", width: "26px"}} />
+                </a>
+                <div class="track-name d-inline-flex flex-column">
+                    {trackName}
+                    <span class="track-artist d-block">Tessa Violet</span>
+                </div> 
+            </td>
+            <td class="track-time text-center">{trackTime}</td>
+            <td class="text-center">
+                <a href="">
+                    <FiShare2 style={{ color: "var(--text)"}} />
+                </a>
+            </td>
+        </tr>
             
-                <tr id="track-number">
-                    <td width="30px">1</td>
-                    <td>
-                        <a href="">
-                            <IoPlayOutline />
-                        </a>
-                        <div>
-                            The Small Things
-                            <span>Conro</span>
-                        </div> 
-                   </td>
-                    <td>3:35</td>
-                    <td>
-                        <a href="">
-                            <FiShare2 style={{ color: "var(--text)"}} />
-                        </a>
-                    </td>
-                </tr>
-            
-        </div>
+       
     );
 }
 
