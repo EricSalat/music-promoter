@@ -1,26 +1,32 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css';
 import Title from "./components/Title";
-import Track from "./components/Track";
 import TrackList from './components/TrackList';
+import Header from './components/Header';
+import VideoYoutube from './components/Video';
+import Footer1 from './components/Footer1';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div class="App">
-      <header></header>
+    <div className="App">
+      <Header />
       <main>
-        <div class="container col-9 d-flex flex-column ">
+        <div className="container col-9 d-flex flex-column ">
           <Title text="Stream it your way" />
           <Title text="Track list" />
           <TrackList />
-          {/* <Title text="Music Video" /> */}
+          <Title text="Music Video" />
+          {/* <VideoYoutube
+          title="Tessa Violet - Crush (Official Music Video)"
+          // width="100%"
+          // height="100%"
+          src="https://www.youtube.com/embed/SiAuAJBZuGs?si=A-H593VA5ElDT0Lz"
+          /> */}
         </div>
       </main>
-      <footer></footer>
+      <Footer1 />
         
     </div>
   )

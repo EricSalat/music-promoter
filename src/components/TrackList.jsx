@@ -3,7 +3,7 @@ import Track from "../components/Track";
 
 function TrackList() {
     return(
-        <table class="table">
+        <table className="table">
             <Track trackNumber="1" trackName="Prelude" trackTime="1:03"/>
             <Track trackNumber="2" trackName="Crush" trackTime="3:36"/>
             <Track trackNumber="3" trackName="Bad Ideas" trackTime="2:59"/>
