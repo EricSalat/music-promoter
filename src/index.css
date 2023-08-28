@@ -64,12 +64,6 @@ p {
 }
 
 
-/* .container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
 
 .App {
   background-color: var(--background);
@@ -82,7 +76,13 @@ h2, .footer-nav-title {
   text-align: left;
   color: var(--text);
   letter-spacing: 0.1em;
-  font-size: var(--title);
+  font-size: 20px;
+  
+}
+
+h2 {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .track-name, .track-artist, td {
@@ -101,9 +101,6 @@ h2, .footer-nav-title {
   font-weight: 400;
 }
 
-.container {
-  height: 100vh;
-}
 
 footer {
   display:grid;
@@ -113,16 +110,16 @@ footer {
 
 .footer-nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Divide el espacio en tres columnas iguales */
-  gap: 10px; /* Espacio entre las columnas */
-  justify-content: center; /* Centrar horizontalmente el contenido */
+  grid-template-columns: 1fr; /* Divide el espacio en tres columnas iguales */
+ 
 }
 
 .footer-nav-title{
-  font-size: 18px;
+  font-size: 14px;
   list-style-type: none;
   line-height: 1.75;
 }
+
 
 .footer-nav-title a {
   color: var(--text);
@@ -169,4 +166,29 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: var(--text);
+}
+
+
+
+
+/* media query para diseño responsive */
+/*Pasar de móvil a escritorio*/
+@media (min-width: 768px) {
+
+  h2 {
+    font-size: var(--title);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /*FOOTER*/
+  .footer-nav {
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px; 
+    justify-content: center; 
+  }
+
+  .footer-nav-title{
+    font-size: 18px;
+  }
+
 }

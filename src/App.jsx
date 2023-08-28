@@ -11,13 +11,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <main>
-        <div className="container col-9 d-flex flex-column ">
+        <div className="container d-flex flex-column ">
           <Title text="Stream it your way" />
           <Title text="Track list" />
           <TrackList />
-          <Title text="Music Video" />
+          {/* <Title text="Music Video" /> */}
           {/* <VideoYoutube
           title="Tessa Violet - Crush (Official Music Video)"
           // width="100%"
