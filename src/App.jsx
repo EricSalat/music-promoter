@@ -13,17 +13,15 @@ function App() {
     <div className="App">
       {/* <Header /> */}
       <main>
-        <div className="container d-flex flex-column ">
+        <div className="container col-9 d-flex flex-column ">
           <Title text="Stream it your way" />
           <Title text="Track list" />
           <TrackList />
-          {/* <Title text="Music Video" /> */}
-          {/* <VideoYoutube
+          <Title text="Music Video" />
+          <VideoYoutube
           title="Tessa Violet - Crush (Official Music Video)"
-          // width="100%"
-          // height="100%"
           src="https://www.youtube.com/embed/SiAuAJBZuGs?si=A-H593VA5ElDT0Lz"
-          /> */}
+          />
         </div>
       </main>
       <Footer1 />
