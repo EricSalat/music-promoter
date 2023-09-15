@@ -2,8 +2,7 @@ import * as React from "react";
 import { IoPlayOutline , IoPauseOutline} from "react-icons/io5";
 import { FiShare2 } from "react-icons/fi";
 import { useState } from 'react';
-import tessaAudio from "./1.mp3";
-import ArianaAudio from "./arianagrande.mp3";
+
 
 
 function Track({trackNumber, trackName, trackTime}) {
@@ -56,7 +55,8 @@ function Track({trackNumber, trackName, trackTime}) {
         {/* Reproductor de audio HTML */}
         {/* Eliminar d-none para poder trabajar sobre el audio */}
         <audio id={`audio-player-${trackNumber}`} className="d-none" controls >
-            <source src={`src/assets/tracks/${trackNumber}.mp3`} type="audio/mpeg" />        
+            <source src={`src/assets/tracks/mp3/${trackNumber}.mp3`} type="audio/mpeg" />        
+            <source src={`src/assets/tracks/ogg/${trackNumber}.ogg`} type="audio/ogg" />        
             Your browser does not support the audio element.
         </audio>
   
