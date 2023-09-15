@@ -1,7 +1,6 @@
 import * as React from "react";
 import { IoPlayOutline } from "react-icons/io5";
 import { FiShare2 } from "react-icons/fi";
-FiShare2
 
 
 function Track({trackNumber, trackName, trackTime}) {
@@ -19,7 +18,7 @@ function Track({trackNumber, trackName, trackTime}) {
                     <span className="track-artist d-block">Tessa Violet</span>
                 </div> 
             </td>
-            <td className="track-time text-center">{trackTime}</td>
+            <td className="track-time text-center ">{trackTime}</td>
             <td className="text-center">
                 <a href="">
                     <FiShare2 style={{ color: "var(--text)"}} />

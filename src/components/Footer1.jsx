@@ -16,7 +16,7 @@ function Footer1() {
  
     return(
         <>
-        <footer className="container col-9 m-auto">
+        <footer className="container m-auto">
             <div className="separator">
                 <hr className="white-separator" />
             </div>
@@ -48,18 +48,34 @@ function Footer1() {
             </div>
 
             <div className="second-footer">
-                <div>
+                <div className="footer-icons">
                     <p>2023 &copy; Hitmakers, All Rights Reserved</p>
                     <IconContext.Provider value={{ color: "var(--text)", size: "18px" }}>
                     <ul className="d-flex">
-                        <li className="mx-2"><FaYoutube /></li>
-                        <li className="mx-2"><FaInstagram /></li>
-                        <li className="mx-2"><FaTiktok /></li>
-                        <li className="mx-2"><FaTwitter /></li>
-                        <li className="mx-2"><FaSpotify /></li>
-                        <li className="mx-2"><FaApple /></li>
-                        <li className="mx-2"><FaTwitch /></li>
-                        <li className="mx-2"><FaDiscord /></li>
+                        <li className="me-2"><a href="#">
+                            <FaYoutube />
+                        </a></li>
+                        <li className="mx-2"><a href="#">
+                            <FaInstagram />
+                        </a></li>
+                        <li className="mx-2"><a href="#">
+                            <FaTiktok />
+                        </a></li>
+                        <li className="mx-2"><a href="#">
+                            <FaTwitter />
+                        </a></li>
+                        <li className="mx-2"><a href="#">
+                            <FaSpotify />
+                        </a></li>
+                        <li className="mx-2"><a href="#">
+                            <FaApple />
+                        </a></li>
+                        <li className="mx-2"><a href="#">
+                            <FaTwitch />
+                        </a></li>
+                        <li className="ms-2"><a href="#">
+                            <FaDiscord />
+                        </a></li>
                     </ul>
                 </IconContext.Provider>
                 </div>
@@ -69,7 +85,9 @@ function Footer1() {
                         <br></br><br></br>
                         This website is false. Only for educational purposes.
                         <br></br><br></br>
-                        Developed with ❤️ by <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">Èric Salat</a>
+                    </small>
+                    <small className="d-flex justify-content-center">
+                    Developed with ❤️ by Èric Salat
                     </small>
                 </p>
             

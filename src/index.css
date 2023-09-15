@@ -69,7 +69,7 @@ p {
   background-color: var(--background);
 }
 
-h2, .footer-nav-title {
+h2, .footer-nav-title, .album-title {
   font-family: 'Monument Extended', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -184,15 +184,14 @@ small {
   font-family: 'Montserrat', sans-serif;
   font-size: smaller;
   font-style: italic;
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
   text-align: center;
   letter-spacing: 1;
+  color: #898888;
 }
 
 small a {
-  /* text-decoration: none; */
   color: inherit;
-  
 }
 
 .second-footer ul li {
@@ -200,6 +199,11 @@ small a {
 }
 .second-footer ul{
   padding:0;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -218,6 +222,72 @@ small a {
   height: 100%;
 }
 
+
+.button {
+  background-color: var(--mainColor);
+  color: var(--text);
+  font-family: 'Monument Extended', sans-serif;
+  text-transform: uppercase;
+  width: auto;
+  padding: 20px 26px;
+  /* margin: 5px; */
+  letter-spacing: 0.1em;
+  width: fit-content;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--text);
+  color: var(--background);
+  border: none;
+}
+
+.album-title {
+  font-size: 32px;
+  padding-top: 16px;
+  margin: 0;
+}
+
+.artist-name {
+  font-size: 28px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.album-data {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Establece la altura del contenedor background al 100% de la altura de la ventana */
+  overflow: hidden;
+  z-index: 1;
+}
+
+.blur-background {
+  position: absolute;
+  width: 100%;
+  height: 65%; /* La altura del fondo borroso seguirá siendo igual a la altura del contenedor background */
+  background-image: url('/src/assets/img/background-cover-tessa-violet-1.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px); /* Ajusta el valor de desenfoque según tus preferencias */
+  z-index: 0; /* Coloca la capa de fondo detrás del contenido */
+  
+}
+
+
+
+
+
+
+  
 
 
 
@@ -241,4 +311,18 @@ small a {
     font-size: 18px;
   }
 
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+}
+
+@media (min-width: 992px) {
+  .custom-img {
+    width: 408px;
+    height: 408px;
+  }
 }

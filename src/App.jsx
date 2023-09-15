@@ -6,6 +6,10 @@ import TrackList from './components/TrackList';
 import Header from './components/Header';
 import VideoYoutube from './components/Video';
 import Footer1 from './components/Footer1';
+import Button from './components/Button';
+import Hero from './components/Hero';
+import { FiShare2 } from "react-icons/fi";
+
 
 function App() {
 
@@ -13,7 +17,8 @@ function App() {
     <div className="App">
       {/* <Header /> */}
       <main>
-        <div className="container col-9 d-flex flex-column ">
+        <Hero />
+        <section className="container d-flex flex-column ">
           <Title text="Stream it your way" />
           <Title text="Track list" />
           <TrackList />
@@ -22,7 +27,7 @@ function App() {
           title="Tessa Violet - Crush (Official Music Video)"
           src="https://www.youtube.com/embed/SiAuAJBZuGs?si=A-H593VA5ElDT0Lz"
           />
-        </div>
+        </section>
       </main>
       <Footer1 />
         
