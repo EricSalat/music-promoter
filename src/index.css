@@ -244,7 +244,7 @@ small a {
 
 .album-title {
   font-size: 32px;
-  padding-top: 16px;
+  padding-top: 2rem;
   margin: 0;
 }
 
@@ -262,25 +262,24 @@ small a {
   justify-content: center;
 }
 
-.background {
+/* .background {
   position: relative;
   width: 100%;
-  height: 100vh; /* Establece la altura del contenedor background al 100% de la altura de la ventana */
+  height: 70vh; 
   overflow: hidden;
   z-index: 1;
-}
+} */
 
-.blur-background {
+/* .blur-background {
   position: absolute;
   width: 100%;
-  height: 65%; /* La altura del fondo borroso seguirá siendo igual a la altura del contenedor background */
+  height: 70%;
   background-image: url('/src/assets/img/background-cover-tessa-violet-1.jpg');
   background-size: cover;
   background-position: center;
-  filter: blur(10px); /* Ajusta el valor de desenfoque según tus preferencias */
-  z-index: 0; /* Coloca la capa de fondo detrás del contenido */
-  
-}
+  filter: blur(10px); 
+  z-index: 0; /
+} */
 
 
 

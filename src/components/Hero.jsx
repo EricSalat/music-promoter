@@ -12,7 +12,7 @@ function Hero () {
           <div className="blur-background"></div>
           <section className="background">
             <div className="d-flex justify-content-center">
-                <div className="container hero align-items-center py-4">
+                <div className="container hero py-4">
                     <div className="row">
                         <div className="col-lg-6 text-center album-cover ">
                           <img src={BadIdeasAlbum} className="img-fluid custom-img"></img>
