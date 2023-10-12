@@ -1,19 +1,25 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { IoPauseOutline, IoPlayOutline } from 'react-icons/io5';
 import { FiShare2 } from 'react-icons/fi';
 
-function Track({ trackNumber, trackName, trackTime, isPlaying, setIsPlaying, stopAll }) {
-  const audioRef = useRef(null);
-
-  const togglePlay = () => {
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      stopAll();  // Detiene la reproducción de otros tracks
-      audioRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
+function Track({ trackNumber, trackName, trackTime, isPlaying: isPlayingProp, setIsPlaying: setIsPlayingProp, stopAll }) {
+    const [isPlaying, setIsPlaying] = useState(isPlayingProp);
+    const audioRef = useRef(null);
+  
+    useEffect(() => {
+      setIsPlaying(isPlayingProp);
+    }, [isPlayingProp]);
+  
+    const togglePlay = () => {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        stopAll();
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+      setIsPlayingProp(!isPlaying);
+    };
 
   return (
     <>
