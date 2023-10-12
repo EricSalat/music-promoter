@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       <main>
         <Hero />
         <section className="container d-flex flex-column ">
