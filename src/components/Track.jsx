@@ -63,8 +63,10 @@ function Track({ trackNumber, trackName, trackTime, isPlaying: isPlayingProp, se
         className="d-none"
         controls
       >
-        <source src={`../../public/tracks/mp3/${trackNumber}.mp3`} type="audio/mpeg" />
-        <source src={`../../public/tracks/mp3/${trackNumber}.ogg`} type="audio/ogg" />
+        {/* <source src={`../../public/tracks/mp3/${trackNumber}.mp3`} type="audio/mpeg" /> */}
+        <source src={`/tracks/mp3/${trackNumber}.mp3`} type="audio/mpeg" />
+        {/* <source src={`../../public/tracks/ogg/${trackNumber}.ogg`} type="audio/ogg" /> */}
+        <source src={`/tracks/ogg/${trackNumber}.ogg`} type="audio/ogg" />
         Your browser does not support the audio element.
       </audio>
     </>
