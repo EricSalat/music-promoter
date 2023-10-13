@@ -16,7 +16,7 @@ function Footer1() {
  
     return(
         <>
-        <footer className="container m-auto">
+        <footer id="footer" className="container m-auto">
             <div className="separator">
                 <hr className="white-separator" />
             </div>

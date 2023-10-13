@@ -1,5 +1,3 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css';
 import Title from "./components/Title";
 import TrackList from './components/TrackList';
@@ -18,7 +16,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <section className="container d-flex flex-column ">
+        <section id="tracklist" className="container d-flex flex-column ">
           <Title text="Stream it your way" />
           <Title text="Track list" />
           <TrackList />

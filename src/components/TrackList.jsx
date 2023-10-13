@@ -7,7 +7,7 @@ function TrackList() {
   
 
   const albumData = [
-    { id: 1, trackNumber: "1", trackName: "Prelude", trackTime: "1:03" },
+    { id: 1, trackNumber: "1", trackName: "Prelude", trackTime: "1:03"},
     { id: 2, trackNumber: "2", trackName: "Bad Ideas", trackTime: "2:59" },
     { id: 3, trackNumber: "3", trackName: "Crush", trackTime: "3:36" },
     { id: 4, trackNumber: "4", trackName: "I Like (the idea of) You", trackTime: "2:48" },

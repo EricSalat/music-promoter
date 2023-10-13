@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { IoPauseOutline, IoPlayOutline } from 'react-icons/io5';
 import { FiShare2 } from 'react-icons/fi';
 
+
 function Track({ trackNumber, trackName, trackTime, isPlaying: isPlayingProp, setIsPlaying: setIsPlayingProp, stopAll }) {
     const [isPlaying, setIsPlaying] = useState(isPlayingProp);
     const audioRef = useRef(null);
@@ -62,8 +63,8 @@ function Track({ trackNumber, trackName, trackTime, isPlaying: isPlayingProp, se
         className="d-none"
         controls
       >
-        <source src={`src/assets/tracks/mp3/${trackNumber}.mp3`} type="audio/mpeg" />
-        <source src={`src/assets/tracks/ogg/${trackNumber}.ogg`} type="audio/ogg" />
+        <source src={`../../public/tracks/mp3/${trackNumber}.mp3`} type="audio/mpeg" />
+        <source src={`../../public/tracks/mp3/${trackNumber}.ogg`} type="audio/ogg" />
         Your browser does not support the audio element.
       </audio>
     </>

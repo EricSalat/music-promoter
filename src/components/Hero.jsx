@@ -23,8 +23,8 @@ function Hero () {
                           <h1 className="album-title">Bad Ideas</h1>
                           <p className="artist-name">Tessa Violet</p>
                           <div>
-                            <Button text="Listen Now" style={{marginRight: "10px"}} />
-                            <Button text="Share" />
+                            <Button text="Listen Now" style={{marginRight: "10px"}} href="#tracklist" />
+                            <Button text="Share" href="" />
                           </div>
                         </div>
                     </div>

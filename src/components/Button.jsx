@@ -4,7 +4,7 @@ import { FiShare2 } from "react-icons/fi";
 
 function Button({text, style}){
   return (
-    <button className="button" style={style}>
+    <button className="button" style={style} href="#tracklist">
       {text}
     </button>
   );
