@@ -17,7 +17,7 @@ function App() {
       <main>
         <Hero />
         <section id="tracklist" className="container d-flex flex-column ">
-          <Title text="Stream it your way" />
+          {/* <Title text="Stream it your way" /> */}
           <Title text="Track list" />
           <TrackList />
           <Title text="Music Video" />

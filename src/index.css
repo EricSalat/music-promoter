@@ -234,6 +234,7 @@ small a {
   letter-spacing: 0.1em;
   width: fit-content;
   border: none;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -257,6 +258,7 @@ small a {
   padding-top: 16px;
   padding-bottom: 16px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .album-data {

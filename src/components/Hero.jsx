@@ -24,7 +24,7 @@ function Hero () {
                           <p className="artist-name">Tessa Violet</p>
                           <div>
                             <Button text="Listen Now" style={{marginRight: "10px"}} href="#tracklist" />
-                            <Button text="Share" href="" />
+                            <Button text="Share" />
                           </div>
                         </div>
                     </div>
