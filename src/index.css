@@ -242,6 +242,10 @@ small a {
   border: none;
 }
 
+.play-button {
+  cursor: pointer;
+}
+
 .album-title {
   font-size: 32px;
   padding-top: 2rem;

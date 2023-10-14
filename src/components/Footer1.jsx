@@ -86,7 +86,7 @@ function Footer1() {
                         This website is false. Only for educational purposes.
                         <br></br><br></br>
                     </small>
-                    <small className="d-flex justify-content-center">
+                    <small style={{fontStyle: "normal"}}className="d-flex justify-content-center">
                     Developed with ❤️ by Èric Salat
                     </small>
                 </p>

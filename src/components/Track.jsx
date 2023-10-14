@@ -31,7 +31,7 @@ function Track({ trackNumber, trackName, trackTime, isPlaying: isPlayingProp, se
         <td className="d-flex">
           <div
             onClick={togglePlay}
-            className="d-flex flex-column justify-content-center ms-2 me-1"
+            className="play-button d-flex flex-column justify-content-center ms-2 me-1"
           >
             {isPlaying ? (
               <IoPauseOutline
@@ -63,9 +63,7 @@ function Track({ trackNumber, trackName, trackTime, isPlaying: isPlayingProp, se
         className="d-none"
         controls
       >
-        {/* <source src={`../../public/tracks/mp3/${trackNumber}.mp3`} type="audio/mpeg" /> */}
         <source src={`/tracks/mp3/${trackNumber}.mp3`} type="audio/mpeg" />
-        {/* <source src={`../../public/tracks/ogg/${trackNumber}.ogg`} type="audio/ogg" /> */}
         <source src={`/tracks/ogg/${trackNumber}.ogg`} type="audio/ogg" />
         Your browser does not support the audio element.
       </audio>
