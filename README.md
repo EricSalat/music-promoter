@@ -19,11 +19,11 @@ Music Promoter es una página web de la productora Hitmakers, desarrollada con R
 
 ## Demo
 
-Todavía no se puede ver una demostración en vivo del proyecto.
+Accede al proyecto en https://hitmakers.vercel.app/
 
 ## Estado del Proyecto
 
-**¡Atención!** Este proyecto actualmente está en construcción y se espera que esté listo para su lanzamiento en octubre de 2023. Estoy trabajando activamente en él y agregando nuevas características. ¡Mantente atento para futuras actualizaciones!
+**¡Atención!** Este proyecto no está terminado al 100%, pero stán disponibles las funcionalidades básicas. Estoy trabajando activamente en él y agregando nuevas características. ¡Mantente atento para futuras actualizaciones!
 
 ## Instalación y Ejecución Local
 
